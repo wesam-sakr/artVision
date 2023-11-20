@@ -1,2 +1,2 @@
 # artVision
-# link : https://wesam-sakr.github.io/smartVision/
+# link : https://wesam-sakr.github.io/artVision/
