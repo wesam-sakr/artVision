@@ -66,6 +66,7 @@ body {
   direction: rtl;
   line-height: 1.7;
   background: var(--body);
+  overflow-x: hidden;
 }
 html[dir="ltr"] body {
   direction: ltr;
@@ -461,6 +462,7 @@ p + .form-control {
 
 .title {
   position: relative;
+  z-index: 2;
   width: max-content;
   font-weight: bold;
   font-size: 26px;
@@ -477,6 +479,7 @@ p + .form-control {
   height: 30px;
   background-repeat: no-repeat;
   z-index: -1;
+  opacity: .7;
 }
 
 .division-ontop {
@@ -499,8 +502,15 @@ p + .form-control {
 
 /* header section */
 header {
-  height: 85vh;
+  height: 98vh;
   position: relative;
+}
+header .owl-carousel,
+header .owl-carousel .owl-stage-outer ,
+header .owl-carousel .owl-stage-outer .owl-stage,
+header .owl-carousel .owl-stage-outer .owl-stage .owl-item,
+header .owl-carousel .owl-stage-outer .owl-stage .owl-item .slide {
+  height: 100%;
 }
 header .carousel-item {
   height: 100%;
@@ -520,6 +530,9 @@ header .carousel-caption {
   width: 60%;
   margin: auto;
   z-index: 9;
+}
+header .carousel-caption *{
+  height: auto;
 }
 header .slide img ,.design img{
   filter: brightness(0.45);
@@ -604,19 +617,18 @@ header .search .range input {
   transform:rotate(270deg);
 }
    
-input[type='range']{
-  color: var(--main-color) !important;
-  height: 2px;
-}
 header .float-icon {
-  top: 100%;
-  /* margin-top: -92px; */
+  top: 0%;
+  margin-top: 5px;
   transform: translate(-50%, 50%);
 }
 
 /* ============================================== */
 
-
+.partner{
+  position: relative;
+  z-index: 11;
+}
 .partner img {
   filter: grayscale(1);
   opacity: 0.85;
@@ -893,7 +905,7 @@ header .float-icon {
   width: 50px;
 }
 .d-count:not(:last-child) {
-  border-inset-inline-end: 1px solid #b59d64;
+  border-inline-end: 1px solid #b59d64;
 }
 .count-icon {
   background-color: white;
@@ -1237,6 +1249,45 @@ header .ln {
   padding: 3rem 0;
   color: #fff;
 }
+.ourWorks{
+  background: #202020;
+}
+.ourWorks .title::after, .services .title::after{
+  opacity: .34;
+}
+
+.allWorks{
+  position: relative;
+}
+.allWorks .item{
+  position: relative;
+}
+.allWorks .item img{
+  height: 330px;
+  object-fit: cover;
+}
+.txt-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.45);
+}
+.txt-overlay .text {
+  color: white;
+  font-size: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+.txt-overlay .text h6{
+  font-weight: bold;
+}
+.item:hover .txt-overlay{
+  opacity: 1;
+}
+
 
 /* ------------- footer --------------- */
 .toTop {
@@ -1250,14 +1301,13 @@ header .ln {
 }
 footer {
   text-align: center;
-  margin-top: 0px;
+  padding-top: 2rem;
   position: relative;
   background: #000;
-  padding: 1.5rem 0;
   color: #fff;
 }
 footer img{
-  width: 150px
+  width: 185px
 }
 footer ul {
   margin: 2.5rem 0;
@@ -1268,7 +1318,7 @@ footer ul {
 }
 footer ul li {
   position: relative;
-  padding-inline-start: 20px;
+  /* padding-inline-start: 20px; */
   font-weight: 400;
   color: #fff !important;
 }
@@ -1278,7 +1328,7 @@ footer ul li:not(:last-child) {
 footer ul li a {
   color: inherit;
 }
-footer li::before {
+/* footer li::before {
   position: absolute;
   content: "";
   inset-inline-start: 0;
@@ -1289,7 +1339,7 @@ footer li::before {
   background: var(--main-color);
   border-radius: 110px 110px 0px 110px;
   cursor: pointer;
-}
+} */
 footer li:hover a {
   color: var(--main-color);
 }
@@ -1299,7 +1349,7 @@ footer li:hover ::before {
 footer .social {
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  padding: 2rem 0;
 }
 footer .social i {
   width: 50px;
@@ -1319,7 +1369,25 @@ footer .social div:hover i {
   opacity: 1;
   transform: translateY(-10px);
 }
+#myinput {
+  border-radius: 0px;
+  height: 2px;
+  width: 150px;
+  outline: none;
+  -webkit-appearance:var(--hover);
+  background: var(--main-color);
+}
 
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  background:var(--main-color);
+  border-radius: 50%;
+}
+input[type='range']::-webkit-slider-runnable-track{
+  background: var(--hover);
+}
 /* -----------------  videos page ----------------- */
 
 /* ------------- media --------------- */
