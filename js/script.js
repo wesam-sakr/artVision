@@ -19,12 +19,19 @@ $(document).ready(function(){
         return;
         }
         var carousel = e.relatedTarget;
-        console.log(carousel.relative(carousel.current()))
-        console.log(carousel.items().length);
-        $('.slider-counter').html(`
-        <span class="len"> ${NumOf(carousel.items().length)} </span>
-        <span class="len mx-1">/</span>
-        <span class="current">${NumOf(carousel.relative(carousel.current()) + 1)}</span>
+        $('.silder-attach').html(`
+        <button class="search">
+            <i class="bi bi-search "></i>
+          </button>
+        <div class="slider-container">
+          <span class="bar"><span class="fill" style="width:${((carousel.relative(carousel.current()) + 1)/ carousel.items().length)*100}%;"></span></span>
+          <input id="slider" name="price" class="slider" type="range" min="0" max="${carousel.items().length}" value="${carousel.relative(carousel.current()) + 1}" disabled>
+        </div>
+        <div class="slider-counter">
+            <span class="len"> ${NumOf(carousel.items().length)} </span>
+            <span class="len mx-1">/</span>
+            <span class="current">${NumOf(carousel.relative(carousel.current()) + 1)}</span>
+        </div>
         `);
     }).owlCarousel({
         items: 1,
