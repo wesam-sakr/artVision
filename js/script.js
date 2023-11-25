@@ -38,7 +38,7 @@ $(document).ready(function(){
         rtl: true,
         loop:true,
         margin:0,
-        nav:true
+        nav:false
     });
 
     // $("header .owl-carousel").owlCarousel({
@@ -54,10 +54,23 @@ $(document).ready(function(){
     $(".partner .owl-carousel").owlCarousel({
         margin:20,
         loop:true,
-        dots: true,
+        dots: false,
         nav: false,
-        items: 6,
+        // items: 6,
         rtl: true,
+        responsive:
+        {
+            992:{
+                items: 6
+            },
+            768:{
+                items: 4
+            },
+            0: {
+                items: 3,
+                margin: 0
+            }
+        }
     });  
 
     $(".services .owl-carousel").owlCarousel({
@@ -66,6 +79,18 @@ $(document).ready(function(){
         nav: true,
         items: 4,
         rtl: true,
-        navText : ['<i class="bi bi-chevron-double-right"></i>','<i class="bi bi-chevron-double-left"></i>']
+        navText : ['<i class="bi bi-chevron-double-right"></i>','<i class="bi bi-chevron-double-left"></i>'],
+        responsive:
+        {
+            992:{
+                items: 4
+            },
+            768:{
+                items: 3
+            },
+            0: {
+                items: 2,
+            }
+        }
     });  
 });

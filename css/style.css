@@ -435,9 +435,9 @@ p + .form-control {
   font-weight: bold;
   color: var(--main-color) !important;
 }
-.navbar .navbar-toggler-icon {
+/* .navbar .navbar-toggler-icon {
   background-image: url(../images/Group\ 67653.png);
-}
+} */
 .navbar li > .nav-link {
   background-color: var(--ultra-lite);
   overflow: hidden;
@@ -1034,6 +1034,59 @@ footer .social div:hover i {
 }
 
 @media (max-width: 576px) {
+  header .carousel-caption {
+    width: 88%;
+    text-align: start;
+    margin: unset;
+    margin-inline-start: 1rem;
+  }
+  header .carousel-caption .h-title{
+    width: auto;
+  }
+  header .carousel-caption .h-title::before {
+    width: 55px;
+    height: 60px;
+    inset-inline-start: 22.5px;
+  }
+  .silder-attach {
+    inset-inline-end: 1rem;
+  }
+  .division-ontop,.division-todown{
+    height: 102px;
+  }
+  .artBadge img {
+    height: 290px;
+  }
+  .float-img img {
+    height: 225px;
+  }
+  .allWorks .item img,.services .item img {
+    height: 270px;
+  }
+  .getNews {
+    margin-top: 0;
+  }
+  .getNews iframe {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 0;
+  }
+  .bg-color {
+    background-size: cover;
+    margin-top: 0rem;
+    padding-bottom: 3rem;
+  }
+  footer ul{
+    display: block !important;
+    columns: 3;
+    text-align: start;
+  }
+  .copyRight {
+    padding: 3rem 0;
+    padding-bottom: 0.5rem;   
+    flex-wrap: wrap;
+    gap: 6px;
+}
   .toTop {
     inset-inline-start: 10px;
     width: 40px;
