@@ -41,7 +41,7 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         nav:false,
-        autoplay: true
+        // autoplay: true
     });
 
     $(".partner .owl-carousel").owlCarousel({
@@ -88,8 +88,6 @@ $(document).ready(function(){
     }); 
     
     var btn_top = $('.toTop');
-    // var btn_bottom = $('.scroll-bottom');
-
     $(window).scroll(function() {
       if ($(window).scrollTop() > 300) {
         btn_top.show();

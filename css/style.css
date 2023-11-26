@@ -595,26 +595,25 @@ header .owl-dot.active:before {
   -ms-transform: translate(-50% , -50%) rotate(270deg);
   -o-transform: translate(-50% , -50%) rotate(270deg);
 }
+.silder-attach .slider-container {
+  top: 4px;
+}
 .silder-attach .slider-counter .len{
   color: #ccc;
   font-size: 16px;
 }
 .silder-attach .slider-container .bar {
   top: 12px;
-  height: 4px;
   transform: translateY(50%);
   background-color: rgb(255 255 255 / 40%);
 }
 .silder-attach .slider-container .bar .fill {
   background-color: #fff ;
 }
-.silder-attach .slider-container .slider {
-  height: 18px;
-}
 .silder-attach .slider-container .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #fff ;
   box-shadow: 0 0 0 0 #fff;
 }
