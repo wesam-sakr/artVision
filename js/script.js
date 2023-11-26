@@ -41,7 +41,8 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         nav:false,
-        // autoplay: true
+        autoplay: true,
+        animateOut: 'fadeOut',
     });
 
     $(".partner .owl-carousel").owlCarousel({
@@ -95,4 +96,15 @@ $(document).ready(function(){
         btn_top.hide();
       }
     });
+    $('.grid-col').append(`
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    `)
 });

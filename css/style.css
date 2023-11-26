@@ -473,6 +473,28 @@ p + .form-control {
   background: var(--main-color);
 }
 
+.p_breadcrumb{
+  height: max-content;
+}
+/* .breadcrumb{
+  padding: 10rem 2rem ;
+} */
+.breadcrumb .content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 99;
+}
+.breadcrumb h6, .breadcrumb a ,.breadcrumb span {
+  line-height: inherit;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #fff ;
+}
 
 /* ----------------- home page ----------------- */
 
@@ -542,42 +564,6 @@ header .carousel-caption p {
   padding: 1rem 0;
 }
 
-/* header .owl-dots {
-  counter-reset: slides-num;
-  position: absolute;
-  top: 50%;
-  left: 2rem;
-  color: #fff;
-  transform: rotate(270deg);
-  margin-top: 15px;
-  width: 56px;
-}
-header .owl-dots:after {
-  content: "0" counter(slides-num) " /";
-  display: inline-block;
-  font-size: zpx;
-  vertical-align: middle;
-  position: absolute;
-  inset-inline-start: 0;
-}
-header .owl-dot {
-  display: inline-block;
-  counter-increment: slides-num;
-  margin-inline-start: 5px;
-}
-header .owl-dot span {
-  display: none;
-}
-header .owl-dot.active:before {
-  content: "0" counter(slides-num);
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 20px;
-  font-weight: 700;
-  position: absolute;
-  inset-inline-end: 0;
-  top: 0;
-} */
 
 .silder-attach{
   top: 50%;
@@ -685,6 +671,9 @@ header .float-icon {
 }
 
 /* ------ service section ------ */
+.services .item{
+  position: relative;
+}
 .services .item img{
   height: 400px;
   object-fit: cover;
@@ -1016,6 +1005,25 @@ footer .social div:hover i {
   filter: brightness(0.65);
 }
 
+
+.terms li {
+  padding-inline-start: 20px;
+  position: relative;
+  margin: 1rem 0;
+  line-height: 1.9;
+}
+.terms li:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 20px;
+  background: var(--main-color);
+  border-radius: 0px 9px 9px 9px;
+  right: 0;
+  top: -4px;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
 /* ------------- media --------------- */
 @media (max-width: 991.8px) {
   .navbar-collapse {
