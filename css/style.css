@@ -311,6 +311,7 @@ p + .form-control {
   background: url('../images/c_map.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: max-content;
 }
 .offcanvas-top .getNews .title::after {
   top: calc(50% - 5px);
