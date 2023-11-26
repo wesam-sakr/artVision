@@ -3,7 +3,6 @@ $(document).ready(function(){
 
     $('body').append('<a aria-label="developer portfolio" href="https://wesam-sakr.github.io/Portfolio/" accesskey="w" target="_blank"></a>')
 
-  
     $('.navbar-nav .nav-link').click(function(){
         $('.navbar-nav .nav-link').each(function(){
             $(this).removeClass('active')
@@ -20,11 +19,14 @@ $(document).ready(function(){
         }
         var carousel = e.relatedTarget;
         $('.silder-attach').html(`
-        <button class="search">
+        <button class="search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
             <i class="bi bi-search "></i>
-          </button>
+        </button>
         <div class="slider-container">
-          <span class="bar"><span class="fill" style="width:${((carousel.relative(carousel.current()) + 1)/ carousel.items().length)*100}%;"></span></span>
+          <span class="bar">
+            <span class="fill" style="width:${((carousel.relative(carousel.current()) + 1)/ carousel.items().length)*100}%;">
+            </span>
+          </span>
           <input id="slider" name="price" class="slider" type="range" min="0" max="${carousel.items().length}" value="${carousel.relative(carousel.current()) + 1}" disabled>
         </div>
         <div class="slider-counter">
@@ -38,18 +40,9 @@ $(document).ready(function(){
         rtl: true,
         loop:true,
         margin:0,
-        nav:false
+        nav:false,
+        autoplay: true
     });
-
-    // $("header .owl-carousel").owlCarousel({
-    //     margin:0,
-    //     loop:true,
-    //     dots: true,
-    //     nav: false,
-    //     items: 1,
-    //     rtl: true,
-    //     // autoplay:true
-    // });  
 
     $(".partner .owl-carousel").owlCarousel({
         margin:20,
@@ -92,5 +85,16 @@ $(document).ready(function(){
                 items: 2,
             }
         }
-    });  
+    }); 
+    
+    var btn_top = $('.toTop');
+    // var btn_bottom = $('.scroll-bottom');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn_top.show();
+      } else {
+        btn_top.hide();
+      }
+    });
 });
