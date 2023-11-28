@@ -13,7 +13,7 @@ $(document).ready(function(){
     function NumOf(n) {
         return (n < 10 && n !=0) ? '0' + n : '' + n;
     }
-    $('.slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    $('header .slider').on('initialized.owl.carousel changed.owl.carousel', function(e) {
         if (!e.namespace)  {
         return;
         }
