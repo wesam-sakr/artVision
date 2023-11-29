@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    // dir
+    var bodyDir = $('body').css('direction')
+    var dirAr
+    if(bodyDir == "rtl"){
+      dirAr= true
+    }
+    else{
+      dirAr = false
+    }
     $('#loading').fadeOut(500);
 
     $('body').append('<a aria-label="developer portfolio" href="https://wesam-sakr.github.io/Portfolio/" accesskey="w" target="_blank"></a>')
@@ -37,7 +46,7 @@ $(document).ready(function(){
         `);
     }).owlCarousel({
         items: 1,
-        rtl: true,
+        rtl: dirAr,
         loop:true,
         margin:0,
         nav:false,
@@ -51,7 +60,7 @@ $(document).ready(function(){
         dots: false,
         nav: false,
         // items: 6,
-        rtl: true,
+        rtl: dirAr,
         responsive:
         {
             992:{
@@ -72,7 +81,7 @@ $(document).ready(function(){
         dots: false,
         nav: true,
         items: 4,
-        rtl: true,
+        rtl: dirAr,
         navText : ['<i class="bi bi-chevron-double-right"></i>','<i class="bi bi-chevron-double-left"></i>'],
         responsive:
         {
