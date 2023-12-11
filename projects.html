@@ -121,152 +121,621 @@
 
     <!-- ====== Start ourWorks ====== -->
     <section class="ourWorks bg-transparent">
-        <div class="text-center pb-4">
-            <h5 class="title m-auto mb-2">
-            أعمالنا
-            </h5>
-            <p class="w-md-50 m-auto">أفضل تصميمات و ديكورات محلات الساعات ، أنيقة وجذابة، مريحة تخلق الدافع على الشراء، بألوان مُبهجة، ورفوفٌ تثير الدهشة وهي تلقي النظرة للشراء.</p>
-        </div>
-        <div class="allWorks">
-            <div class="row gx-0">
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="item">
-                <a class="d-block" href="project.html">
-                    <img class="w-100" src="images/1.jpg">
-                    <div class="txt-overlay">
-                        <div class="text">
-                        <h6>
-                        اسم المشروع
-                        </h6>
-                        <div class="float-icon">
-                            <i class="bi bi-eye"></i>
-                        </div>
-                    </div>
-                    </div>
-                </a>
-                </div>
+      <div class="text-center pb-4">
+        <h5 class="title m-auto mb-2">
+        أعمالنا
+        </h5>
+        <p class="w-md-50 m-auto">أفضل تصميمات و ديكورات محلات الساعات ، أنيقة وجذابة، مريحة تخلق الدافع على الشراء، بألوان مُبهجة، ورفوفٌ تثير الدهشة وهي تلقي النظرة للشراء.</p>
+      </div>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+            <h5>الكل</h5>
+            <div class="slider-container">
+              <span class="bar"><span class="fill" style="width:50%;"></span></span>
+              <input id="slider" name="price" class="slider" type="range" min="0" max="100" value="50" disabled>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-hospital-tab" data-bs-toggle="pill" data-bs-target="#pills-hospital" type="button" role="tab" aria-controls="pills-hospital" aria-selected="false">
+            <h5>مستشفى</h5>
+            <div class="slider-container">
+              <span class="bar"><span class="fill" style="width:50%;"></span></span>
+              <input id="slider" name="price" class="slider" type="range" min="0" max="100" value="50" disabled>
+            </div>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-medicalCenter-tab" data-bs-toggle="pill" data-bs-target="#pills-medicalCenter" type="button" role="tab" aria-controls="pills-medicalCenter" aria-selected="false">
+            <h5>مركز طبي</h5>
+            <div class="slider-container">
+              <span class="bar"><span class="fill" style="width:50%;"></span></span>
+              <input id="slider" name="price" class="slider" type="range" min="0" max="100" value="50" disabled>
+            </div>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-DentalCenter-tab" data-bs-toggle="pill" data-bs-target="#pills-DentalCenter" type="button" role="tab" aria-controls="pills-DentalCenter" aria-selected="false">
+            <h5>مركز اسنان</h5>
+            <div class="slider-container">
+              <span class="bar"><span class="fill" style="width:50%;"></span></span>
+              <input id="slider" name="price" class="slider" type="range" min="0" max="100" value="50" disabled>
+            </div>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+          <div class="allWorks">
+            <div class="row gx-0">
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                      <div class="txt-overlay">
+                        <div class="text">
+                          <h6>
+                          اسم المشروع
+                          </h6>
+                          <div class="float-icon">
+                            <i class="bi bi-eye"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/2.png">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/3.jpg">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/4.jpg">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/5.jpg">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/6.jpg">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/1.jpg">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
                 <div class="item">
-                <a class="d-block" href="project.html">
+                  <a class="d-block" href="project.html">
                     <img class="w-100" src="images/2.png">
                     <div class="txt-overlay">
-                    <div class="text">
+                      <div class="text">
                         <h6>
-                        اسم المشروع
+                          اسم المشروع
                         </h6>
                         <div class="float-icon">
-                        <i class="bi bi-eye"></i>
+                          <i class="bi bi-eye"></i>
                         </div>
                     </div>
-                </div>
+                  </div>
                 </a>
+              </div>
             </div>
             </div>
-            </div>
+          </div>
         </div>
+        <div class="tab-pane fade" id="pills-hospital" role="tabpanel" aria-labelledby="pills-hospital-tab" tabindex="0">
+          <div class="allWorks">
+            <div class="row gx-0">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                      <div class="txt-overlay">
+                        <div class="text">
+                          <h6>
+                          اسم المشروع
+                          </h6>
+                          <div class="float-icon">
+                            <i class="bi bi-eye"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/3.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/4.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/5.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/6.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-medicalCenter" role="tabpanel" aria-labelledby="pills-medicalCenter-tab" tabindex="0">
+
+          <div class="allWorks">
+            <div class="row gx-0">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                      <div class="txt-overlay">
+                        <div class="text">
+                          <h6>
+                          اسم المشروع
+                          </h6>
+                          <div class="float-icon">
+                            <i class="bi bi-eye"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/3.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/4.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/5.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/6.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-DentalCenter" role="tabpanel" aria-labelledby="pills-DentalCenter-tab" tabindex="0">
+          <div class="allWorks">
+            <div class="row gx-0">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                      <div class="txt-overlay">
+                        <div class="text">
+                          <h6>
+                          اسم المشروع
+                          </h6>
+                          <div class="float-icon">
+                            <i class="bi bi-eye"></i>
+                          </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/3.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/4.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/5.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/6.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/1.jpg">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="item">
+                  <a class="d-block" href="project.html">
+                    <img class="w-100" src="images/2.png">
+                    <div class="txt-overlay">
+                      <div class="text">
+                        <h6>
+                          اسم المشروع
+                        </h6>
+                        <div class="float-icon">
+                          <i class="bi bi-eye"></i>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>  
     </section>
 
     <!-- ====== Start About ====== -->

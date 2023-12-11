@@ -35,6 +35,10 @@
   -ms-transition: 0.2s linear;
   -o-transition: 0.2s linear;
 }
+
+[type=email], [type=number], [type=tel], [type=url] {
+  direction: rtl ;
+}
 p {
   margin: 0;
 }
@@ -517,7 +521,15 @@ html[dir="ltr"] .loading{
   -o-transition: all 0.3s;
 }
 .navbar .custom-btn {
+  margin-top: 0;
+  background: var(--main-color) !important;
+  border-radius: 0;
   margin-inline-start: 0.75rem;
+  padding: 0.35rem 1.75rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .navbar .custom-btn:hover .text i {
   background: #fff;
@@ -553,6 +565,42 @@ html[dir="ltr"] .breadcrumb span {
   -moz-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   -o-transform: rotateX(180deg);
+}
+
+.nav-pills{
+  gap: 20px;
+  justify-content: center;
+}
+.nav-pills .nav-link{
+  color: #fff;
+}
+.nav-pills .nav-link.active{
+  background: transparent;
+  color: var(--main-color) !important;
+}
+.nav-pills .nav-link h5{
+  margin: 0;
+}
+.nav-pills .nav-link.active h5{
+  font-weight: bold;
+}
+.nav-pills .nav-link .slider-container{
+  width: 0px;
+  opacity: 0;
+  margin: auto;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.nav-pills .nav-link .slider-container .slider::-webkit-slider-thumb {
+  width: 8px;
+  height: 8px;
+}
+.nav-pills .nav-link.active .slider-container{
+  width: 60px;
+  opacity: 1 !important;
 }
 
 /* ----------------- home page ----------------- */
@@ -834,6 +882,7 @@ html[dir="ltr"] .float-icon{
 .services .owl-nav .owl-next.disabled{
   opacity: .4;
 }
+
 /* ------ whatWeDo section ------ */
 .whatWeDo .overlay{
   z-index: -1;
@@ -919,6 +968,11 @@ html[dir="ltr"] .artBadge::after{
 .ourWorks .title::after, .services .title::after{
   opacity: .34;
 }
+.ourWorks.bg-transparent .nav-pills .nav-link,
+.services.bg-transparent .nav-pills .nav-link{
+  color: #686868;
+}
+
 .allWorks{
   position: relative;
 }
@@ -1221,7 +1275,7 @@ html[dir="ltr"] .terms li:before{
   -o-border-radius: 6px;
 }
 .info_con {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: -58px;
   position: relative;
@@ -1383,6 +1437,60 @@ html[dir="ltr"] .terms li:before{
   border: 1px solid #CCCCCC  !important; 
 }
 
+/* ------ service page ------ */
+.contact .input-group .btn{
+  border-radius: 0;
+  border-bottom: 1px solid #A3A5A8 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.contact .input-group .btn:focus{
+  box-shadow: unset !important;
+}
+.serv .division-todown {
+  display: block !important;
+  background: #000 !important;
+}
+.serv-details{
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+  padding-bottom: 3rem;
+}
+
+
+.serv .silder-attach {
+  top: 90%;
+  inset-inline-start: 0;
+  inset-block-end: unset;
+  color: #fff;
+  transform: translate(50%,50%) rotate(270deg);
+  -webkit-transform: translate(50%,50%) rotate(270deg);
+  -moz-transform: translate(50%,50%) rotate(270deg);
+  -ms-transform: translate(50%,50%) rotate(270deg);
+  -o-transform: translate(50%,50%) rotate(270deg);
+}
+.serv-img{
+  position: relative;
+  padding-inline-start: 2rem;
+  height: 370px;
+  filter: brightness(.65);
+  -webkit-filter: brightness(.65);
+}
+.serv-img .owl-carousel, 
+.serv-img .owl-stage, 
+.serv-img .owl-stage-outer,
+.serv-img .owl-item{
+  height: 100%;
+}
+.serv-img .owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* contact page */
 .contact{
   margin-bottom: 4rem;
@@ -1415,11 +1523,15 @@ html[dir="ltr"] .terms li:before{
   -o-border-radius: 0;
 }
 .contact input.form-control,
-.contact select.form-select,
-.contact select.form-select:focus{
+.contact select.form-select{
   border: 0;
   border-bottom: 1px solid #A3A5A8 !important;
   box-shadow: none;
+}
+.contact .form-control:focus,
+.contact .form-select:focus{
+  border-width: 2px !important;
+  border-color: var(--main-color) !important;
 }
 .contact textarea,.contact textarea:focus{
   border: 1px solid #A3A5A8 !important;
@@ -1444,6 +1556,55 @@ html[dir="ltr"] .terms li:before{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.project-form{
+  background: #000;
+  padding: 3rem 0;
+  color: #fff;
+}
+.project-form .custom-btn {
+  background: var(--main-color) !important;
+}
+.contact.project-form .form-control,
+.contact.project-form .form-select{
+  background-color: #000;
+  color: #fff;
+}
+.contact.project-form .form-control::placeholder{
+  color: #fff;
+}
+
+
+
+.video-wrap{
+  position: relative;
+  height: 330px;
+  border-radius: 0px;
+  overflow: hidden;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.video-wrap img{
+  transition: .4s;
+}
+.video-wrap:hover img{
+  transform: scale(1.2);
+}
+.video-wrap .video-cover-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 5;
+  cursor: pointer;
+  border: 0 !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  filter: brightness(.65);
+}
+
 /* ------------- media --------------- */
 @media (max-width: 991.8px) {
   .navbar-collapse {
